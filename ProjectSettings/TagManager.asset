@@ -6,6 +6,7 @@ TagManager:
   tags:
   - LightSaber
   - SliceObject
+  - ground
   layers:
   - Default
   - TransparentFX
