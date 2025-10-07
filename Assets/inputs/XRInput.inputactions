@@ -1,0 +1,54 @@
+{
+    "name": "XRInput",
+    "maps": [
+        {
+            "name": "GrabClimb",
+            "id": "92d50a39-be35-441b-bbf4-e552efb06e80",
+            "actions": [
+                {
+                    "name": "ClimbR",
+                    "type": "Button",
+                    "id": "fafa72d3-6b3b-4266-a4f6-ebad2ca9710a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ClimbL",
+                    "type": "Button",
+                    "id": "ca5615a8-b463-4859-b0dc-812712cec166",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5d1e863a-a71e-4f3d-9651-cfebf54973d2",
+                    "path": "<XRController>{RightHand}/{GripButton}",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ClimbR",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ce4306ba-2eae-4271-bf7d-94c7e9305ff6",
+                    "path": "<XRController>{LeftHand}/{GripButton}",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ClimbL",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

@@ -7,6 +7,8 @@ TagManager:
   - LightSaber
   - SliceObject
   - ground
+  - Hand
+  - Climber
   layers:
   - Default
   - TransparentFX
@@ -16,8 +18,8 @@ TagManager:
   - UI
   - Table
   - SliceObject
-  - 
-  - 
+  - Ground
+  - Mountain
   - 
   - 
   - 
