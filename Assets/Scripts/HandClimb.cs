@@ -1,6 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Xml.Serialization;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class HandClimb : MonoBehaviour
@@ -8,7 +7,7 @@ public class HandClimb : MonoBehaviour
     public bool InContact;
     public bool isAttached;
     public Vector3 lastposition;
-
+    public bool isMoving = false;
     public ClimbPiece pieceGrabbed;
     void Start()
     {
@@ -17,11 +16,11 @@ public class HandClimb : MonoBehaviour
     }
     void Update()
     {
-        if (isAttached)
+       /* if (isAttached)
         {
             lastposition = this.transform.position;
             this.transform.position = pieceGrabbed.transform.position;
-        }
+        }*/
     }
 
     void OnTriggerEnter(Collider other)
@@ -43,7 +42,13 @@ public class HandClimb : MonoBehaviour
     public void Attach()
     {
         Debug.Log("Getting Attached");
-        if (InContact)
+        if (InContact && !isAttached)
             isAttached = true;
+    }
+    public void Dettach()
+    {
+        Debug.Log("Dettaching");
+        if (isAttached)
+            isAttached = false;
     }
 }

@@ -97,7 +97,7 @@ public partial class @XRInput: IInputActionCollection2, IDisposable
                     ""id"": ""fafa72d3-6b3b-4266-a4f6-ebad2ca9710a"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Hold"",
                     ""initialStateCheck"": false
                 },
                 {
@@ -106,7 +106,7 @@ public partial class @XRInput: IInputActionCollection2, IDisposable
                     ""id"": ""ca5615a8-b463-4859-b0dc-812712cec166"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Hold"",
                     ""initialStateCheck"": false
                 }
             ],
@@ -115,7 +115,7 @@ public partial class @XRInput: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""5d1e863a-a71e-4f3d-9651-cfebf54973d2"",
                     ""path"": ""<XRController>{RightHand}/{GripButton}"",
-                    ""interactions"": ""Hold"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""ClimbR"",
@@ -126,7 +126,7 @@ public partial class @XRInput: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""ce4306ba-2eae-4271-bf7d-94c7e9305ff6"",
                     ""path"": ""<XRController>{LeftHand}/{GripButton}"",
-                    ""interactions"": ""Hold"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""ClimbL"",
