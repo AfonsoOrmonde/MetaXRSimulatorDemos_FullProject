@@ -119,6 +119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 057f8e9e3f455a2498fad0a5f2aa8123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  original: {r: 0.7610062, g: 0.16512388, b: 0.16512388, a: 0}
+  attachedColor: {r: 0.19686708, g: 0.7924528, b: 0.23240566, a: 0}
+  rendererMesh: {fileID: 6156021169720509164}
 --- !u!54 &3242719394108951426
 Rigidbody:
   m_ObjectHideFlags: 0

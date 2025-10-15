@@ -43,12 +43,18 @@ public class HandClimb : MonoBehaviour
     {
         Debug.Log("Getting Attached");
         if (InContact && !isAttached)
+        {
+            pieceGrabbed.ChangeToAttachedColor();
             isAttached = true;
+        }
     }
     public void Dettach()
     {
         Debug.Log("Dettaching");
         if (isAttached)
+        {
+            pieceGrabbed.ChangeToOriginalColor();
             isAttached = false;
+        }
     }
 }
