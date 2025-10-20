@@ -16,11 +16,7 @@ public class HandClimb : MonoBehaviour
     }
     void Update()
     {
-       /* if (isAttached)
-        {
-            lastposition = this.transform.position;
-            this.transform.position = pieceGrabbed.transform.position;
-        }*/
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -37,6 +33,7 @@ public class HandClimb : MonoBehaviour
         {
             InContact = false;
             isAttached = false;
+            pieceGrabbed.setAttached(isAttached);
         }
     }
     public void Attach()
@@ -44,8 +41,9 @@ public class HandClimb : MonoBehaviour
         Debug.Log("Getting Attached");
         if (InContact && !isAttached)
         {
-            pieceGrabbed.ChangeToAttachedColor();
             isAttached = true;
+            pieceGrabbed.setAttached(isAttached);
+
         }
     }
     public void Dettach()
@@ -53,8 +51,8 @@ public class HandClimb : MonoBehaviour
         Debug.Log("Dettaching");
         if (isAttached)
         {
-            pieceGrabbed.ChangeToOriginalColor();
             isAttached = false;
+            pieceGrabbed.setAttached(isAttached);
         }
     }
 }
