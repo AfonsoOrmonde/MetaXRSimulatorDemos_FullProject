@@ -9,6 +9,8 @@ TagManager:
   - ground
   - Hand
   - Climber
+  - QDSUIBackplateGradient
+  - QDSUIToggleBorderlessButton
   layers:
   - Default
   - TransparentFX
@@ -20,8 +22,8 @@ TagManager:
   - SliceObject
   - Ground
   - Mountain
-  - 
-  - 
+  - Trees
+  - Apples
   - 
   - 
   - 
