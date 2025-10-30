@@ -55,6 +55,7 @@ public class PlayerManager : MonoBehaviour
         }
         else
         {
+            Debug.Log("Entering in gravvity reput");
             playerController.GravityFactor = gravityBefore;
         }
     }
