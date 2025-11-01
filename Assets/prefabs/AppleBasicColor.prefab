@@ -108,17 +108,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ad17c2bf681e18b4782fc6c12792d8de,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad17c2bf681e18b4782fc6c12792d8de,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad17c2bf681e18b4782fc6c12792d8de,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad17c2bf681e18b4782fc6c12792d8de,
         type: 3}
@@ -233,8 +233,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.9629823, y: 1.8086587, z: 1.8530655}
-  m_Center: {x: 0.047096238, y: -0.031132177, z: -0.024204254}
+  m_Size: {x: 1.9629823, y: 2.2269714, z: 1.8530655}
+  m_Center: {x: 0.047096238, y: 0.17802417, z: -0.024204254}
 --- !u!54 &7713135470883098038
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -244,7 +244,7 @@ Rigidbody:
   m_GameObject: {fileID: 6331443158179295061}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 100
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -261,7 +261,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &6076528956130417482
 MonoBehaviour:
   m_ObjectHideFlags: 0

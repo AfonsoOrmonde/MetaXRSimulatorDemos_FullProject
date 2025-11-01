@@ -44,6 +44,7 @@ public class PlayerManager : MonoBehaviour
             playerController.GravityFactor = 0f;
             if (CheckForMeaningfulMovement(false))
             {
+                Debug.Log("yep shit");
                 World.velocity = handTrackingSpace.transform.TransformVector(OVRInput.GetLocalControllerVelocity(OVRInput.Controller.RTouch));
                 lastPositionR = OVRInput.GetLocalControllerPosition(OVRInput.Controller.RTouch);
             }
@@ -55,7 +56,6 @@ public class PlayerManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Entering in gravvity reput");
             playerController.GravityFactor = gravityBefore;
         }
     }

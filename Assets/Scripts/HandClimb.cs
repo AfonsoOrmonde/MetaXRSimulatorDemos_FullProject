@@ -19,7 +19,7 @@ public class HandClimb : MonoBehaviour
 
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Climber")
         {
@@ -29,10 +29,9 @@ public class HandClimb : MonoBehaviour
     }
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Climber")
+        if (other.gameObject.tag == "Climber" && !isAttached)
         {
             InContact = false;
-            isAttached = false;
             pieceGrabbed.setAttached(isAttached);
         }
     }
