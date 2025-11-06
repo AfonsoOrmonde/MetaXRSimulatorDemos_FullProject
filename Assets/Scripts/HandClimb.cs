@@ -9,6 +9,7 @@ public class HandClimb : MonoBehaviour
     public Vector3 lastposition;
     public bool isMoving = false;
     public ClimbPiece pieceGrabbed;
+    public AudioManager audioManager;
     void Start()
     {
         InContact = false;
@@ -42,6 +43,7 @@ public class HandClimb : MonoBehaviour
         {
             isAttached = true;
             pieceGrabbed.setAttached(isAttached);
+            audioManager.PlayGrab();
 
         }
     }
