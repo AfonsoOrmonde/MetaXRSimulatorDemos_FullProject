@@ -55,6 +55,7 @@ public class PlayerManager : MonoBehaviour
         }
         else
         {
+            World.velocity = new Vector3(0,0,0);
             playerController.GravityFactor = gravityBefore;
         }
     }
